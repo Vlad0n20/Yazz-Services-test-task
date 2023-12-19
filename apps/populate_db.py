@@ -24,11 +24,6 @@ def create_categories():
         'food': ['Випічка', 'Солодощі', 'Алкоголь'],
         'electronics': ['Ноутбуки', 'Смартфони', 'Навушники']
     }
-    # {
-    #     Shop.ShopTypeChoices.SPORT: ['Зима', 'Літо', 'Футбол'],
-    #     Shop.ShopTypeChoices.FOOD: ['Випічка', 'Солодощі', 'Алкоголь'],
-    #     Shop.ShopTypeChoices.ELECTRONICS: ['Ноутбуки', 'Смартфони', 'Навушники', 'Планшети']
-    # }
     for key, value in data.items():
         for item in value:
             Category.objects.create(
@@ -56,8 +51,6 @@ def create_product(count: int = 10):
             shop_id=fake.random_element(elements=shops_list_ids),
         )
         categories_list_ids = list(Category.objects.filter(for_shop_type=new_product.shop.type).values_list('id', flat=True))
-        print(categories_list_ids)
-        print(type(categories_list_ids))
         for i in random.sample(categories_list_ids, random.randint(1, 3)):
             new_product.categories.add(i)
 
