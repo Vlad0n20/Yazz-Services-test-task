@@ -1,21 +1,7 @@
 from django.db import models
 
-from apps.shop.models import Shop
+from apps.shop.models import Shop, Category
 from apps.product.services import get_product_photo_upload_path
-
-
-class Category(models.Model):
-    name = models.CharField(max_length=255, verbose_name='Назва категорії')
-    for_shop_type = models.CharField(max_length=20, choices=Shop.ShopTypeChoices.choices,
-                                     verbose_name='Для типу магазину')
-
-    def __str__(self):
-        return self.name
-
-    class Meta:
-        verbose_name = 'Категорія'
-        verbose_name_plural = 'Категорії'
-        ordering = ['name']
 
 
 class Product(models.Model):
@@ -30,9 +16,6 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=10, decimal_places=2, verbose_name='Ціна (грн)')
     weight = models.FloatField(null=True, blank=True, verbose_name='Вага')
     keywords = models.TextField(null=True, blank=True, verbose_name='Ключові слова')
-
-    def get_category_choices(self):
-        return Category.objects.filter(for_shop_type=self.shop.type).values_list('name', flat=True)
 
     def __str__(self):
         return self.name
