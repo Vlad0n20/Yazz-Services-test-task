@@ -20,6 +20,11 @@ class Shop(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        verbose_name = 'Магазин'
+        verbose_name_plural = 'Магазини'
+        ordering = ['name']
+
 
 class Category(models.Model):
     name = models.CharField(max_length=255, verbose_name='Назва категорії')
