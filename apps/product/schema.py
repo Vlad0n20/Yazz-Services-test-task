@@ -1,5 +1,5 @@
 import graphene
-from django.db.models import Min, Prefetch, F
+from django.db.models import Prefetch, F
 from graphene_django import DjangoObjectType
 
 from apps.product.models import Product
@@ -56,5 +56,6 @@ class Query(graphene.ObjectType):
             if expensive_product:
                 expensive_products.append(expensive_product)
         return expensive_products
+
 
 schema = graphene.Schema(query=Query)

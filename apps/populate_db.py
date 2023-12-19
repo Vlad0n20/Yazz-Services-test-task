@@ -1,7 +1,7 @@
 import random
 from faker import Faker
 
-from apps.product.models import Product, Category, ProductPhoto
+from apps.product.models import Product, Category
 from apps.shop.models import Shop
 
 fake = Faker('uk_UA')

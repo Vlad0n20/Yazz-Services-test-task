@@ -1,6 +1,5 @@
 from django import forms
 
-from apps.shop.models import Shop, Category
 from apps.product.models import Product
 
 
