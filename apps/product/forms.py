@@ -11,7 +11,7 @@ class ProductForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         if self.instance.pk and self.instance.shop:
-            self.fields['categories'].choices = self.instance.shop.get_category_choices()
+            self.fields['categories'].choices = self.instance.shop.get_category_choices().values_list('id', 'name')
 
     def clean(self):
         cleaned_data = super().clean()
@@ -19,7 +19,7 @@ class ProductForm(forms.ModelForm):
             shop = cleaned_data['shop']
             categories = cleaned_data['categories']
             if not categories.filter(for_shop_type=shop.type).exists():
-                self.fields['categories'].choices = shop.get_category_choices()
+                self.fields['categories'].choices = shop.get_category_choices().values_list('id', 'name')
                 raise forms.ValidationError(
                     'Обрана категорія не підходить для типу магазину'
                 )
