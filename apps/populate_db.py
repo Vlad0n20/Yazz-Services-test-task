@@ -1,4 +1,5 @@
 import random
+
 from faker import Faker
 
 from apps.product.models import Product, Category
