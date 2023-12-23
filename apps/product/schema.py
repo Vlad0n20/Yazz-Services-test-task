@@ -1,5 +1,6 @@
 import graphene
-from django.db.models import Prefetch, F
+from django.db import connection
+from django.db.models import Prefetch, F, Max, Subquery, OuterRef, Q
 from graphene_django import DjangoObjectType
 
 from apps.product.models import Product
@@ -21,10 +22,6 @@ class CategoryForProductType(DjangoObjectType):
 class ProductType(DjangoObjectType):
     shop = graphene.Field(ShopForProductType)
     categories = graphene.List(CategoryForProductType)
-    # in these next two fields you can see the name of the store and the name of the category
-    # in graphql for the most expensive products in the store and category
-    shop_name = graphene.String()
-    category_name = graphene.String()
 
     class Meta:
         model = Product
@@ -38,24 +35,17 @@ class ProductType(DjangoObjectType):
 
 
 class Query(graphene.ObjectType):
-    cheapest_products_in_shop = graphene.List(ProductType)
+    expansive_products_in_shop = graphene.List(ProductType)
 
-    def resolve_cheapest_products_in_shop(self, info, **kwargs):
-        expensive_products = []
-        unique_shop_category_pairs = Product.objects.prefetch_related(
-            Prefetch('categories', queryset=Category.objects.all())
-        ).values_list('shop_id', 'categories__id')
-        for shop_id, category_id in set(unique_shop_category_pairs):
-            expensive_product = Product.objects.filter(
-                shop_id=shop_id,
-                categories__id=category_id
-            ).annotate(
-                shop_name=F('shop__name'),
-                category_name=F('categories__name')
-            ).order_by('-price').first()
-            if expensive_product:
-                expensive_products.append(expensive_product)
-        return expensive_products
+    def resolve_expansive_products_in_shop(self, info, **kwargs):
+        the_expensive_product_in_shop_and_category = Product.objects.prefetch_related('categories').filter(
+            shop_id=OuterRef('shop_id'),
+            categories__id=OuterRef('categories__id'),
+        ).order_by('-price')[0:1]
+        expansive_products_in_shop = Product.objects.filter(
+            pk=Subquery(the_expensive_product_in_shop_and_category.values('id'))
+        )
+        return expansive_products_in_shop
 
 
 schema = graphene.Schema(query=Query)
