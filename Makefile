@@ -12,10 +12,10 @@ remove_containers:
 
 
 create_admin:
-	python manage.py shell -c "from django.contrib.auth.models import User; User.objects.create_superuser('admin', 'admin@gmail.com', 'admin')"
+	python manage.py createsuperuser
 
 create_admin_in_container:
-	docker exec -it app python manage.py shell -c "from django.contrib.auth.models import User; User.objects.create_superuser('admin', 'admin@gmail.com', 'admin')"
+	docker exec -it app python manage.py createsuperuser
 
 populate_db:
 	python manage.py shell -c "from apps import populate_db; populate_db.populate_db()"
