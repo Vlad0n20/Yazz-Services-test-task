@@ -5,7 +5,7 @@ from apps.product.services import get_product_photo_upload_path
 
 
 class Product(models.Model):
-    name = models.CharField(max_length=255, verbose_name='Назва')
+    name = models.CharField('Назва', max_length=255)
     description = models.TextField(null=True, blank=True, verbose_name='Опис')
     shop = models.ForeignKey(
         Shop,
