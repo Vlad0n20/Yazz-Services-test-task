@@ -4,9 +4,9 @@ from apps.product.models import Product, Category, ProductPhoto
 from apps.product.forms import ProductForm
 
 
-class ProductPhotoInline(admin.StackedInline):  # or use admin.TabularInline for a tabular layout
+class ProductPhotoInline(admin.StackedInline):
     model = ProductPhoto
-    extra = 3
+    extra = 5
     fields = ['photo']
 
 
