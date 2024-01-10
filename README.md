@@ -9,14 +9,25 @@
     ```sh
     $ make build_containers
     ```
-4. After step 3 populate the database with command if you use docker-compose:
+4. After step 3 populate the database with command if you use docker-compose if you want to generate new data:
     ```sh
     $ make populate_db_in_container
     ```
     or run locally:
     ```sh
-    $ make populate_db
+    $ python manage.py populate_db
     ```
+   
+   if you want to use existing data:
+    ```sh
+    $ make populate_db_in_container_with_existing_data
+    ```
+    or run locally:
+    ```sh
+    $ python manage.py loaddata fixtures/shop.json
+    $ python manage.py loaddata fixtures/products.json
+
+       ```
 5. Create superuser (username-admin, password-admin) with command if you use docker-compose:
     ```sh
     $ make create_admin_in_container
