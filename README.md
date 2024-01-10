@@ -20,21 +20,20 @@
    
    if you want to use existing data:
     ```sh
-    $ make populate_db_in_container_with_existing_data
+    $ make load_data_in_container
     ```
     or run locally:
     ```sh
     $ python manage.py loaddata fixtures/shop.json
     $ python manage.py loaddata fixtures/products.json
-
-       ```
+    ```
 5. Create superuser (username-admin, password-admin) with command if you use docker-compose:
     ```sh
     $ make create_admin_in_container
     ```
     or run locally:
     ```sh
-    $ make create_admin
+    $ python manage.py createsuperuser
     ```
 
 Now you can use the application.
