@@ -1,0 +1,276 @@
+[
+  {
+    "model": "product.product",
+    "pk": 1,
+    "fields": {
+      "name": "distinctio",
+      "description": "Vel esse officiis dignissimos odio dicta. Blanditiis tenetur accusamus laborum voluptate ea. Hic dolorum soluta aut molestiae amet id excepturi.",
+      "shop": 2,
+      "price": "860.00",
+      "weight": 50.4,
+      "keywords": null,
+      "categories": [
+        9,
+        7,
+        8
+      ]
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 2,
+    "fields": {
+      "name": "voluptas",
+      "description": "Explicabo et atque nostrum. Possimus ipsam laborum voluptatibus dolores voluptatum fugit.\nAdipisci quibusdam cum aperiam. Nostrum ex excepturi.",
+      "shop": 3,
+      "price": "505.00",
+      "weight": -32.95,
+      "keywords": null,
+      "categories": [
+        9
+      ]
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 3,
+    "fields": {
+      "name": "quidem",
+      "description": "Minus deleniti reiciendis dolore eos facilis. Dolorum iste magnam optio nesciunt. Itaque impedit tenetur tempore quis pariatur facere.",
+      "shop": 3,
+      "price": "908.00",
+      "weight": -31.32,
+      "keywords": null,
+      "categories": [
+        9,
+        7,
+        8
+      ]
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 4,
+    "fields": {
+      "name": "consectetur",
+      "description": "Quidem architecto consequuntur voluptas ipsum. Rem perspiciatis totam doloremque quam. Error numquam a a ab voluptatem.\nQuae neque officia aspernatur aliquam dolores.",
+      "shop": 5,
+      "price": "85.00",
+      "weight": 85.31,
+      "keywords": null,
+      "categories": [
+        9,
+        7
+      ]
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 5,
+    "fields": {
+      "name": "dignissimos",
+      "description": "Suscipit temporibus nam harum. Repudiandae quas dicta praesentium. Laudantium animi doloribus minus quod quibusdam nemo.",
+      "shop": 5,
+      "price": "687.00",
+      "weight": 75.15,
+      "keywords": null,
+      "categories": [
+        9,
+        7,
+        8
+      ]
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 6,
+    "fields": {
+      "name": "reprehenderit",
+      "description": "Sed doloribus iste ut dolorum officiis. Eligendi architecto earum reiciendis corrupti neque laudantium cum. Ab doloribus laborum sint veniam molestiae.",
+      "shop": 4,
+      "price": "997.00",
+      "weight": 33.75,
+      "keywords": null,
+      "categories": [
+        9,
+        8
+      ]
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 7,
+    "fields": {
+      "name": "ad",
+      "description": "Libero provident id. Sit eligendi quasi repellendus. Eligendi vero alias aliquam quaerat incidunt commodi.",
+      "shop": 4,
+      "price": "249.00",
+      "weight": -73.97,
+      "keywords": null,
+      "categories": [
+        8
+      ]
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 8,
+    "fields": {
+      "name": "fugiat",
+      "description": "Dolore harum praesentium dicta molestias repudiandae. Fugit repellat quisquam ratione.",
+      "shop": 3,
+      "price": "233.00",
+      "weight": -14.65,
+      "keywords": null,
+      "categories": [
+        9
+      ]
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 9,
+    "fields": {
+      "name": "aut",
+      "description": "Mollitia ratione provident soluta incidunt totam culpa. Possimus optio possimus culpa. Vero laborum aspernatur eos mollitia. Fugiat nesciunt dignissimos facilis unde.",
+      "shop": 5,
+      "price": "813.00",
+      "weight": -76.62,
+      "keywords": null,
+      "categories": [
+        9,
+        7,
+        8
+      ]
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 10,
+    "fields": {
+      "name": "ex",
+      "description": "Ea dolorem impedit rem beatae cum. Laborum molestiae quos eos dicta tempora ut. Quidem harum est.",
+      "shop": 2,
+      "price": "248.00",
+      "weight": 19.06,
+      "keywords": null,
+      "categories": [
+        7,
+        8
+      ]
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 11,
+    "fields": {
+      "name": "dolorem",
+      "description": "Reprehenderit possimus quo labore consequatur similique nisi. Sequi eveniet eaque eos omnis harum voluptate. Eveniet incidunt facilis culpa voluptate neque sunt.",
+      "shop": 9,
+      "price": "94.00",
+      "weight": 42.94,
+      "keywords": "Commodi cupiditate ullam nisi exercitationem deleniti. Nesciunt quaerat distinctio vero inventore consequuntur animi laudantium. Repudiandae ratione omnis.",
+      "categories": []
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 12,
+    "fields": {
+      "name": "reiciendis",
+      "description": "Mollitia reiciendis non tempore non. Aut molestiae odit rerum.\nIure error inventore voluptatum unde. Quis iure voluptatum et dignissimos.",
+      "shop": 10,
+      "price": "507.00",
+      "weight": 71.68,
+      "keywords": "Nihil dignissimos amet commodi sequi earum. Amet cum odio ab.",
+      "categories": [
+        11,
+        12
+      ]
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 13,
+    "fields": {
+      "name": "reiciendis",
+      "description": "Mollitia reiciendis non tempore non. Aut molestiae odit rerum.\nIure error inventore voluptatum unde. Quis iure voluptatum et dignissimos.",
+      "shop": 11,
+      "price": "507.00",
+      "weight": 71.68,
+      "keywords": "Nihil dignissimos amet commodi sequi earum. Amet cum odio ab.",
+      "categories": [
+        13,
+        14,
+        15
+      ]
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 14,
+    "fields": {
+      "name": "ad",
+      "description": "Animi alias aspernatur neque. Tempora possimus culpa distinctio optio adipisci quia corporis. Sint neque excepturi aperiam accusamus fugiat ad.",
+      "shop": 12,
+      "price": "823.00",
+      "weight": -21.17,
+      "keywords": "Suscipit aspernatur quidem animi totam. Voluptatem cupiditate tempora cupiditate nam deserunt cum. Reiciendis magni recusandae molestias illum.",
+      "categories": [
+        15,
+        4
+      ]
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 15,
+    "fields": {
+      "name": "beatae",
+      "description": "Nulla deserunt sequi. Officiis ipsam deleniti.\nQuae dolorem consequuntur commodi. Delectus accusamus nulla iste iusto perferendis. Doloremque quo ipsam.",
+      "shop": 13,
+      "price": "186.00",
+      "weight": 12.44,
+      "keywords": "Sunt dicta eum accusamus illum nobis. Minus ipsa voluptatibus exercitationem. Exercitationem rerum minima voluptas repellat adipisci in.",
+      "categories": [
+        14,
+        4,
+        1
+      ]
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 16,
+    "fields": {
+      "name": "fuga",
+      "description": "Soluta asperiores voluptas magnam nulla quod ratione corporis. Laudantium nulla fugit rem pariatur.",
+      "shop": 14,
+      "price": "136.00",
+      "weight": 78.63,
+      "keywords": "Adipisci officiis aliquid tempora. Rerum unde voluptatibus amet commodi et in nostrum.",
+      "categories": [
+        1,
+        2,
+        9
+      ]
+    }
+  },
+  {
+    "model": "product.product",
+    "pk": 17,
+    "fields": {
+      "name": "fuga",
+      "description": "Soluta asperiores voluptas magnam nulla quod ratione corporis. Laudantium nulla fugit rem pariatur.",
+      "shop": 15,
+      "price": "136.00",
+      "weight": 78.63,
+      "keywords": "Adipisci officiis aliquid tempora. Rerum unde voluptatibus amet commodi et in nostrum.",
+      "categories": [
+        11,
+        6,
+        1
+      ]
+    }
+  }
+]

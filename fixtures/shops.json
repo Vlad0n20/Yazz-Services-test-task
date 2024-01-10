@@ -1,0 +1,290 @@
+[
+  {
+    "model": "shop.shop",
+    "pk": 1,
+    "fields": {
+      "name": "Конопленко, Масоха and Вакарчук",
+      "description": "",
+      "type": "sport",
+      "latitude": "9.572225",
+      "longitude": "154.961885",
+      "sales_commission": 24
+    }
+  },
+  {
+    "model": "shop.shop",
+    "pk": 2,
+    "fields": {
+      "name": "Вишиваний and Sons",
+      "description": "",
+      "type": "electronics",
+      "latitude": "-61.478405",
+      "longitude": "1.653300",
+      "sales_commission": 3
+    }
+  },
+  {
+    "model": "shop.shop",
+    "pk": 3,
+    "fields": {
+      "name": "Андріїшин-Фаренюк",
+      "description": "",
+      "type": "electronics",
+      "latitude": "66.656966",
+      "longitude": "-15.395191",
+      "sales_commission": 16
+    }
+  },
+  {
+    "model": "shop.shop",
+    "pk": 4,
+    "fields": {
+      "name": "Проценко, Терещенко and Батіг",
+      "description": "",
+      "type": "electronics",
+      "latitude": "21.317314",
+      "longitude": "-77.164546",
+      "sales_commission": 7
+    }
+  },
+  {
+    "model": "shop.shop",
+    "pk": 5,
+    "fields": {
+      "name": "Швачка, Матвієнко and Єресько",
+      "description": "",
+      "type": "electronics",
+      "latitude": "-37.410493",
+      "longitude": "-50.856549",
+      "sales_commission": 4
+    }
+  },
+  {
+    "model": "shop.shop",
+    "pk": 7,
+    "fields": {
+      "name": "Мазур Inc",
+      "description": "",
+      "type": "sport",
+      "latitude": "-26.417589",
+      "longitude": "-108.115964",
+      "sales_commission": 0
+    }
+  },
+  {
+    "model": "shop.shop",
+    "pk": 8,
+    "fields": {
+      "name": "Скорик, Деркач and Абрамчук",
+      "description": "",
+      "type": "sport",
+      "latitude": "72.652151",
+      "longitude": "-14.967659",
+      "sales_commission": 8
+    }
+  },
+  {
+    "model": "shop.shop",
+    "pk": 9,
+    "fields": {
+      "name": "Панчук PLC",
+      "description": "",
+      "type": "sport",
+      "latitude": "-74.556098",
+      "longitude": "-131.430285",
+      "sales_commission": 7
+    }
+  },
+  {
+    "model": "shop.shop",
+    "pk": 10,
+    "fields": {
+      "name": "Бебешко, Яценко and Барабаш",
+      "description": "",
+      "type": "food",
+      "latitude": "75.171173",
+      "longitude": "-60.081417",
+      "sales_commission": 29
+    }
+  },
+  {
+    "model": "shop.shop",
+    "pk": 11,
+    "fields": {
+      "name": "Бебешко, Яценко and Барабаш",
+      "description": "",
+      "type": "food",
+      "latitude": "75.171173",
+      "longitude": "-60.081417",
+      "sales_commission": 29
+    }
+  },
+  {
+    "model": "shop.shop",
+    "pk": 12,
+    "fields": {
+      "name": "Пустовіт Ltd",
+      "description": "",
+      "type": "sport",
+      "latitude": "6.692960",
+      "longitude": "1.329830",
+      "sales_commission": 20
+    }
+  },
+  {
+    "model": "shop.shop",
+    "pk": 13,
+    "fields": {
+      "name": "Канівець Inc",
+      "description": "",
+      "type": "sport",
+      "latitude": "-8.906300",
+      "longitude": "-139.023731",
+      "sales_commission": 29
+    }
+  },
+  {
+    "model": "shop.shop",
+    "pk": 14,
+    "fields": {
+      "name": "Зінкевич, Голик and Перепелиця",
+      "description": "",
+      "type": "food",
+      "latitude": "69.865320",
+      "longitude": "120.010038",
+      "sales_commission": 23
+    }
+  },
+  {
+    "model": "shop.shop",
+    "pk": 15,
+    "fields": {
+      "name": "Зінкевич, Голик and Перепелиця",
+      "description": "",
+      "type": "food",
+      "latitude": "69.865320",
+      "longitude": "120.010038",
+      "sales_commission": 23
+    }
+  },
+  {
+    "model": "shop.category",
+    "pk": 1,
+    "fields": {
+      "name": "Зима",
+      "for_shop_type": "sport"
+    }
+  },
+  {
+    "model": "shop.category",
+    "pk": 2,
+    "fields": {
+      "name": "Літо",
+      "for_shop_type": "sport"
+    }
+  },
+  {
+    "model": "shop.category",
+    "pk": 3,
+    "fields": {
+      "name": "Футбол",
+      "for_shop_type": "sport"
+    }
+  },
+  {
+    "model": "shop.category",
+    "pk": 4,
+    "fields": {
+      "name": "Випічка",
+      "for_shop_type": "food"
+    }
+  },
+  {
+    "model": "shop.category",
+    "pk": 5,
+    "fields": {
+      "name": "Солодощі",
+      "for_shop_type": "food"
+    }
+  },
+  {
+    "model": "shop.category",
+    "pk": 6,
+    "fields": {
+      "name": "Алкоголь",
+      "for_shop_type": "food"
+    }
+  },
+  {
+    "model": "shop.category",
+    "pk": 7,
+    "fields": {
+      "name": "Ноутбуки",
+      "for_shop_type": "electronics"
+    }
+  },
+  {
+    "model": "shop.category",
+    "pk": 8,
+    "fields": {
+      "name": "Смартфони",
+      "for_shop_type": "electronics"
+    }
+  },
+  {
+    "model": "shop.category",
+    "pk": 9,
+    "fields": {
+      "name": "Навушники",
+      "for_shop_type": "electronics"
+    }
+  },
+  {
+    "model": "shop.category",
+    "pk": 10,
+    "fields": {
+      "name": "reprehenderit",
+      "for_shop_type": "sport"
+    }
+  },
+  {
+    "model": "shop.category",
+    "pk": 11,
+    "fields": {
+      "name": "perspiciatis",
+      "for_shop_type": "electronics"
+    }
+  },
+  {
+    "model": "shop.category",
+    "pk": 12,
+    "fields": {
+      "name": "perspiciatis",
+      "for_shop_type": "electronics"
+    }
+  },
+  {
+    "model": "shop.category",
+    "pk": 13,
+    "fields": {
+      "name": "perspiciatis",
+      "for_shop_type": "electronics"
+    }
+  },
+  {
+    "model": "shop.category",
+    "pk": 14,
+    "fields": {
+      "name": "perspiciatis",
+      "for_shop_type": "electronics"
+    }
+  },
+  {
+    "model": "shop.category",
+    "pk": 15,
+    "fields": {
+      "name": "perspiciatis",
+      "for_shop_type": "electronics"
+    }
+  }
+]
