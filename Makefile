@@ -15,3 +15,7 @@ create_admin_in_container:
 
 populate_db_in_container:
 	docker exec -it app python manage.py populate_db
+
+load_data_in_container:
+	docker exec -t app python manage.py loaddata fixtures/shops.json
+	docker exec -t app python manage.py loaddata fixtures/products.json
