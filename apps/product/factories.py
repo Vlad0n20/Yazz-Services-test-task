@@ -3,6 +3,7 @@ from faker import Faker
 
 from apps.shop.factories import ShopFactory, CategoryFactory
 from apps.product.models import Product
+from apps.shop.models import Shop, Category
 
 fake = Faker("uk_UA")
 
@@ -29,3 +30,7 @@ class ProductFactory(factory.django.DjangoModelFactory):
 
     class Meta:
         model = Product
+
+
+class ProductFactoryWithoutCreatingNewShop(ProductFactory):
+    shop = factory.Iterator(Shop.objects.all())
