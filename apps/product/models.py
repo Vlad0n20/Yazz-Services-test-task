@@ -1,3 +1,6 @@
+import os
+import json
+
 from django.db import models
 
 from apps.shop.models import Shop, Category
